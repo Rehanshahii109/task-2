@@ -1,0 +1,210 @@
+.hero-section {
+  background-color: #111;
+  min-height: 80vh;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+  padding: 100px 0;
+}
+
+.features-section {
+  background-color: #f9f9f9;
+}
+
+.features-section h5 {
+  color: #333;
+  font-weight: 600;
+}
+
+.shop {
+padding: 25px;
+background-color:#10375C;
+;
+}
+.Homepage{
+    background-image: url('./img/hero.png');
+    background-size: cover;
+    position: relative;
+}
+.ContantSection{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    position: absolute;
+    top: 0px;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.shop-img{
+    width: 170px;
+height: 170px;
+/* angle: 0 deg; */
+opacity: 1px;
+top: 2340px;
+left: 600px;
+margin-top: 2%;
+}
+
+.heading-2 {
+    width: 777;
+height: 102;
+/* angle: 0 deg; */
+opacity: 1;
+top: 2174px;
+left: 816px;
+
+}
+
+.content{
+  padding: 25px;
+}
+
+.market-img{
+  
+  padding: 30px;
+  background-color: black;
+}
+
+.graphic-area {
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.beta-section {
+  /* background: linear-gradient(135deg, #1a8c4d, #23a867); */
+  background-color: rgb(62, 133, 62);
+ margin-left: 70px;
+  width: 90%;
+ 
+}
+
+.accordion-button {
+  font-weight: 500;
+}
+
+.accordion-item {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+footer ul li {
+  margin-bottom: 6px;
+}
+
+footer .form-control {
+  max-width: 250px;
+}
+
+
+
+
+/* Top CTA Banner */
+section.bg-primary.text-white {
+  background-color: #001f3f !important;
+  background-image: linear-gradient(135deg, #001f3f, #003f5f);
+    padding: 90px !important;
+
+  
+}
+
+/* Button inside CTA */
+section.bg-primary .btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+}
+
+/* FAQ Section */
+.accordion-button:not(.collapsed) {
+  background-color: #eaf3ff;
+  color: #0d6efd;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-body {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* FAQ Heading */
+section.bg-light h2 {
+  position: relative;
+  display: inline-block;
+}
+
+section.bg-light h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+
+/* Footer */
+footer {
+  background-color: #111927;
+  color: #fff;
+}
+
+footer h6 {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+footer a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer .form-control-sm {
+  background-color: #1a1f2b;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+footer .form-control-sm::placeholder {
+  color: #aaa;
+}
+
+footer .btn-sm {
+  white-space: nowrap;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+footer .btn-sm:hover {
+  background-color: #0056b3;
+  border-color: #004a99;
+}
+
+
+
+
+
+
+
