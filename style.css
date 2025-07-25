@@ -203,8 +203,80 @@ footer .btn-sm:hover {
 }
 
 
+  
+ 
+
+.inner-grid {
+    display: flex;
+    height: 100%;
+}
+
+.mockup-sidebar {
+    width: 25%;
+    border-right: 1px solid #f0f0f0;
+    padding-right: 15px;
+}
+
+.sidebar-item {
+    height: 35px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.sidebar-item.active {
+    background-color: #e0e0e0;
+}
+
+.mockup-content {
+    width: 75%;
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.script-item {
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    font-weight: 500;
+}
 
 
+.float-item {
+    position: absolute;
+    padding: 8px 18px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    z-index: 3;
+    font-size: 0.9rem;
+}
 
+.marketplace-tag {
+    background-color: #4A6E9B;
+    top: 0;
+    left: 20px;
+    transform: rotate(-12deg);
+}
 
+.treatment-tag {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    bottom: 40px;
+    left: 50px;
+    transform: rotate(8deg);
+}
 
+.purchase-tag {
+    background-color: #2980b9;
+    top: 100px;
+    right: -20px;
+    transform: rotate(5deg);
+}

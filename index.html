@@ -20,11 +20,26 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav me-3">
-          <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        
+<div class="dropdown">
+  <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Features
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Marketplace</a></li>
+    <li><a class="dropdown-item" href="#">Program</a></li>
+    <li><a class="dropdown-item" href="#">Producer</a></li>
+    <li><a class="dropdown-item" href="#">Screenwriter</a></li>
+    <li><a class="dropdown-item" href="#">
+      WoFoundations <span class="dot"></span>
+    </a></li>
+  </ul>
+</div>
+          <li class="nav-item"><a class="nav-link" href="/parchase.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="/ourblog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Our Courses</a></li>
         </ul>
         <a class="btn btn-outline-primary me-2" href="#">Login</a>
         <a class="btn btn-primary" href="#">Sign Up</a>
@@ -154,7 +169,10 @@
       <div class="col-lg-6 text-start">
         <div class="card mb-3 shadow border-0">
           <div class="card-body border-start border-4 border-danger">
-            <h5 class="fw-bold mb-1">Marketplace dashboard</h5>
+            <div class="d-flex justify-content-between">
+              <h5 class="fw-bold mb-1">Marketplace dashboard</h5>
+              <a href="./marketplace.html">...</a>
+            </div>
             <p class="text-muted small mb-0">View, search, and manage scripts on your marketplace dashboard.</p>
           </div>
         </div>
@@ -173,18 +191,19 @@
 
 <!-- Beta Access Section -->
 <section class="py-5 ">
-  <div class="container- ">
+  <div class="  ">
     <div class="row align-items-center bg-gradient  rounded-4 p-4 beta-section">
       <div class="col-md-3 text-center mb-3 mb-md-0">
         <img src="https://images.unsplash.com/photo-1634595477722-7bc68dd410fd?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cG9ydHJhaXQlMjB3b21hbnxlbnwwfHwwfHx8MA%3D%3D" alt="Person" class="img-fluid rounded-circle"/>
       </div>
       <div class="col-md-6">
         <small class="text-uppercase text-white-50">Early Access</small>
-        <h4 class="fw-bold">Build Beta with us</h4>
-        <p class="mb-0">Get full access to the Marketplace at zero cost. Browse Our rich catalog of scripts, purchase the treatment on an option term or full script without paying for access to our Marketplace.</p>
-      </div>
+        <h4 class="fw-bold text-white">Build Beta with us</h4>
+        <p class="mb-0 text-white">Get full access to the Marketplace at zero cost. Browse Our rich catalog of scripts, purchase the treatment on an option term or full script without paying for access to our Marketplace.</p>
+        <br> <br>
       <div class="col-md-3 text-md-end mt-3 mt-md-0">
         <a href="#" class="btn btn-light text-success fw-bold">GET STARTED</a>
+      </div>
       </div>
     </div>
   </div>
@@ -199,39 +218,76 @@
 
      <!-- FAQ SECTION  -->
 
-     <section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center fw-bold mb-4">Frequently Asked Questions</h2>
-    <div class="accordion shadow-sm" id="faqAccordion">
-      
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faqHeadingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseOne">
-            What type of producer can join the Marketplace?
-          </button>
-        </h2>
-        <div id="faqCollapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            Independent producers, Non-Guild (Industry Professionals), Non-Guild (Financier/Investors), Member of ASC, PGA, DGA, SAGAFTRA, and Producers Union are eligible to join the Marketplace.
-          </div>
-        </div>
-      </div>
+ 
+  
+  
+  <style>
+    body {
+      background-color: #f8f9fa;
+      padding: 40px;
+    }
+    .faq-container {
+      display: flex;
+      gap: 30px;
+    }
+    .nav-pills .nav-link {
+      background: white;
+      border: 1px solid #dee2e6;
+      margin-bottom: 10px;
+      color: #000;
+      text-align: left;
+      font-weight: 500;
+      border-radius: 8px;
+      padding: 15px;
+      position: relative;
+    }
+    .nav-pills .nav-link::after {
+      content: "+";
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      font-size: 18px;
+    }
+    .nav-pills .nav-link.active::after {
+      content: "−";
+    }
+    .nav-pills .nav-link.active {
+      border-left: 4px solid #0d6efd;
+      font-weight: bold;
+    }
+    .tab-content {
+      background: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      flex: 1;
+    }
+  </style>
 
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faqHeadingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapseTwo">
-            Will I have to apply to get access?
-          </button>
-        </h2>
-        <div id="faqCollapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-          <div class="accordion-body">
-            No application is required if you qualify as a producer.
-          </div>
-        </div>
-      </div>
 
-      <!-- Add more FAQs if needed -->
+  <h4 class="mb-4 text-center my-5">Frequently Asked Questions</h4>
 
+  <div class="faq-container">
+    <!-- Left column -->
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="max-width: 400px; width: 100%;">
+      <button class="nav-link active" id="q1-tab" data-bs-toggle="pill" data-bs-target="#q1" type="button" role="tab">What type of producer can join the Marketplace?</button>
+      <button class="nav-link" id="q2-tab" data-bs-toggle="pill" data-bs-target="#q2" type="button" role="tab">Will I have to apply to get access?</button>
+      <button class="nav-link" id="q3-tab" data-bs-toggle="pill" data-bs-target="#q3" type="button" role="tab">Do I have to buy a material before joining the Marketplace?</button>
+      <button class="nav-link" id="q4-tab" data-bs-toggle="pill" data-bs-target="#q4" type="button" role="tab">What kind of scripts can I get in the Marketplace?</button>
+      <button class="nav-link" id="q5-tab" data-bs-toggle="pill" data-bs-target="#q5" type="button" role="tab">How long does the option term last?</button>
+    </div>
+
+    <!-- Right column -->
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="q1" role="tabpanel">All types of producers, including industry professionals, indie creators, and students, can join the Marketplace. Simply apply to begin.</div>
+      <div class="tab-pane fade" id="q2" role="tabpanel">Yes, there's an application process. We review and approve based on activity, background, and intent.</div>
+      <div class="tab-pane fade" id="q3" role="tabpanel">No purchase is needed to join. You can explore the Marketplace and its offerings freely before committing.</div>
+      <div class="tab-pane fade" id="q4" role="tabpanel">You’ll find features, shorts, comedy, drama, thrillers, animation, and more—written by professionals and rising talents.</div>
+      <div class="tab-pane fade" id="q5" role="tabpanel">Option terms vary, typically between 6–12 months. Exact durations depend on the agreement with the writer.</div>
+    </div>
+  </div>
+
+  
     </div>
   </div>
 </section>
